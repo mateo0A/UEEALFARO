@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Colores peincipales*/
+:root{
+    --bck-body:#DDD;
+    --bck-navBar:#FFF;
+}
+
+/*Body*/
+body{
+    background: var(--bck-body);
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-areas: 
+    "nav cont"
+    ;
+}
+
+/*-------------------------------*/
+/*Nav bar*/
+.nav-bar{
+    grid-area: nav;
+    background: red;
+     
+}
+/*------------------------------*/
+
+
+/*Content body*/
+.content{
+    grid-area: cont;
+    background: black;
+    min-width: 100%;
+    max-width: 100%;
+
+}
+
+/*-----------------------------*/
